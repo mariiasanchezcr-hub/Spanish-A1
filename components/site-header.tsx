@@ -1,0 +1,4 @@
+'use client';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+export function SiteHeader() { const [open,setOpen]=useState(false); return <header className="border-b border-ink/10 bg-cream"><div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"><Link href="/" className="text-xl font-black tracking-tight">🇪🇸 Spanish-A1</Link><button className="rounded-lg border px-3 py-2 md:hidden" aria-expanded={open} onClick={()=>setOpen(!open)}>Menú</button><nav className={`${open?'flex':'hidden'} absolute left-0 right-0 top-[65px] z-10 flex-col gap-4 border-b bg-cream p-5 md:static md:flex md:flex-row md:border-0 md:bg-transparent md:p-0`}><Link href="/course" className="font-semibold hover:text-teal-700">Curso</Link><Link href="/progress" className="font-semibold hover:text-teal-700">Progreso</Link><Link href="/quizzes/unit-0-1" className="font-semibold hover:text-teal-700">Quiz integrador</Link></nav></div></header>; }

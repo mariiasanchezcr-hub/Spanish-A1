@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function FinalExamPage(){return <main className="mx-auto max-w-3xl px-5 py-12"><Link href="/course" className="underline">← Mapa del curso</Link><section className="mt-6 rounded-3xl border bg-white p-8"><p className="text-sm font-bold uppercase tracking-widest text-teal-700">Próximamente</p><h1 className="mt-2 text-3xl font-black">Examen final A1</h1><p className="mt-3 text-slate-600">La ruta está preparada. El examen se implementará después de completar las Unidades 2 a 10.</p></section></main>}
